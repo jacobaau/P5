@@ -32,7 +32,7 @@ round(cor(data2),3)
 
 # Model 2.1: with all 10 factors
 # Fitting model y = beta0 + beta1*x1 + ... + beta10*x10 + epsilon
-mod2.1 = lm(deaths~ med_age + avg_life + log(gdp) + log(pop_dens) + hum_dev
+mod2.1 = lm(log(deaths)~ med_age + avg_life + log(gdp) + log(pop_dens) + hum_dev
          + age_70 + diab + log(health_e) + asthma + obes,
          na.action = na.omit) 
 summary(mod2.1)
