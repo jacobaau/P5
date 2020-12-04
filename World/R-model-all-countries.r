@@ -7,7 +7,7 @@ library("regclass")
 #=================================================================
 
 # Importing datasets
-Covid_data <- read_excel("C:/Users/ChristianSoendergaard/Dropbox/AAU - Matematik-økonomi/5. Semester/P5 - projekt/Dataset/Covid-data-all-countries.xlsx")
+Covid_data <- read_excel("C:/Users/ChristianSoendergaard/Dropbox/AAU - Matematik-Ã¸konomi/5. Semester/P5 - projekt/Dataset/Covid-data-all-countries.xlsx")
 View(Covid_data)
 
 # Defining vectors consisting of the data
