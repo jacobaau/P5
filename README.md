@@ -7,7 +7,7 @@ Mathematics-economics, 5th semester. Aalborg University.
 The way to use the files within this repository, is to
 insert the .R-file into R studio and thus importing the 
 corresponding data set into the Rstudio Global 
-Environment window. Only then, can the code be run.
+Environment window. Only then, the code can be run.
 
 Model 1 consists of the contents within the folder "World".
 
