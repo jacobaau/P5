@@ -48,4 +48,18 @@ mod2.2 = lm(log(deaths)~ log(gdp) + log(pop_dens)
           na.action = na.omit)
 summary(mod2.2); VIF(mod2.2)
 
-# Hence, the null model fits the data better
+# According to the F-test, the null model fits the data better
+#But the T-tests shows significance, so we proceed
+
+# Model 2.3: Removing diab, health_e, age_70, obes, gdp and asthma due to T-tests
+# Fitting model y = beta0 + beta1*x1 + epsilon
+mod2.3 = lm(log(deaths)~ log(pop_dens),
+            na.action = na.omit)
+summary(mod2.3)
+
+# Computing residuals and plots
+res = residuals(mod2.3)
+plot(log(pop_dens),res, pch=20); abline(0,0)
+
+# QQ-plot
+qqnorm(res); qqline(res)
